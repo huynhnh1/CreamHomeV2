@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cream Home – Tiệm bánh ngọt thủ công cao cấp. Bánh kem dâu tây Hokkaido, Tiramisu, Mousse trà xanh, Macaron ngũ sắc. Đặt bánh sinh nhật, kỷ niệm tại TP.HCM." />
+  <meta name="keywords" content="bánh ngọt, tiệm bánh, bánh kem, tiramisu, macaron, cream home, bánh thủ công" />
+  <meta property="og:title" content="Cream Home – Trọn Vị Ngọt Ngào, Đong Đầy Yêu Thương" />
+  <meta property="og:description" content="Thưởng thức nghệ thuật bánh ngọt thủ công trong không gian thanh lịch." />
+  <title>Cream Home – Trọn Vị Ngọt Ngào, Đong Đầy Yêu Thương</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🎂</span>
+        <span class="logo-text">Cream<em>Home</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a></li>
+        <li><a href="#products" class="nav-link" data-vi="Thực Đơn" data-en="Menu">Thực Đơn</a></li>
+        <li><a href="#occasions" class="nav-link" data-vi="Theo Dịp" data-en="Occasions">Theo Dịp</a></li>
+        <li><a href="#story" class="nav-link" data-vi="Câu Chuyện" data-en="Our Story">Câu Chuyện</a></li>
+        <li><a href="#reviews" class="nav-link" data-vi="Đánh Giá" data-en="Reviews">Đánh Giá</a></li>
+        <li><a href="#order" class="nav-link" data-vi="Đặt Bánh" data-en="Pre-Order">Đặt Bánh</a></li>
+        <li><a href="#contact" class="nav-link" data-vi="Liên Hệ" data-en="Contact">Liên Hệ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" id="langToggle" title="Switch Language">
+          <span class="lang-vi active">VI</span>
+          <div class="lang-slider"></div>
+          <span class="lang-en">EN</span>
+        </div>
+        <button class="nav-cta" id="navCta" onclick="scrollToSection('order')" data-vi="Đặt Bánh" data-en="Order Now">Đặt Bánh</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero_cake.png" alt="Cream Home bakery" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-vi="Thủ Công · Cao Cấp · Tươi Ngon" data-en="Handcrafted · Premium · Fresh">✦ Thủ Công · Cao Cấp · Tươi Ngon</div>
+      <h1 class="hero-title">
+        <span class="hero-title-brand">Cream Home</span>
+        <span class="hero-title-sub" data-vi="Trọn Vị Ngọt Ngào," data-en="Every Bite Full of">Trọn Vị Ngọt Ngào,</span>
+        <span class="hero-title-sub italic" data-vi="Đong Đầy Yêu Thương" data-en="Love &amp; Sweetness">Đong Đầy Yêu Thương</span>
+      </h1>
+      <p class="hero-slogan" data-vi="Thưởng thức nghệ thuật bánh ngọt thủ công trong không gian thanh lịch" data-en="Savor the art of handcrafted pastries in an elegant atmosphere">Thưởng thức nghệ thuật bánh ngọt thủ công trong không gian thanh lịch</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary" data-vi="Xem Thực Đơn" data-en="View Menu">Xem Thực Đơn</a>
+        <a href="#order" class="btn btn-outline" data-vi="Đặt Bánh Ngay" data-en="Order Now">Đặt Bánh Ngay</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-label" data-vi="Đơn Hàng" data-en="Orders">Đơn Hàng</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label" data-vi="Thủ Công" data-en="Handmade">Thủ Công</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label" data-vi="Đánh Giá" data-en="Reviews">Đánh Giá</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      <span class="scroll-text" data-vi="Cuộn xuống" data-en="Scroll">Cuộn xuống</span>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-content">
+      <span>🍓 Bánh Kem Dâu Hokkaido</span>
+      <span>✦</span>
+      <span>☕ Tiramisu Cổ Điển</span>
+      <span>✦</span>
+      <span>🍵 Mousse Trà Xanh</span>
+      <span>✦</span>
+      <span>🥐 Croissant Bơ Pháp</span>
+      <span>✦</span>
+      <span>🎨 Macaron Ngũ Sắc</span>
+      <span>✦</span>
+      <span>❤️ Red Velvet</span>
+      <span>✦</span>
+      <span>🫐 Bánh Tart Trái Cây</span>
+      <span>✦</span>
+      <span>🌸 Trà Hoa Cúc Mật Ong</span>
+      <span>✦</span>
+      <span>🍓 Bánh Kem Dâu Hokkaido</span>
+      <span>✦</span>
+      <span>☕ Tiramisu Cổ Điển</span>
+      <span>✦</span>
+      <span>🍵 Mousse Trà Xanh</span>
+      <span>✦</span>
+      <span>🥐 Croissant Bơ Pháp</span>
+      <span>✦</span>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-vi="Thực Đơn" data-en="Our Menu">Thực Đơn</span>
+        <h2 class="section-title" data-vi="Những Chiếc Bánh Ngọt Ngào" data-en="Sweet Delicacies">Những Chiếc Bánh Ngọt Ngào</h2>
+        <p class="section-subtitle" data-vi="Mỗi chiếc bánh là một tác phẩm nghệ thuật – được tạo nên bằng nguyên liệu thượng hạng và tình yêu vô bờ." data-en="Every cake is a work of art – crafted from premium ingredients and boundless love.">Mỗi chiếc bánh là một tác phẩm nghệ thuật – được tạo nên bằng nguyên liệu thượng hạng và tình yêu vô bờ.</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all" data-vi="Tất Cả" data-en="All">Tất Cả</button>
+        <button class="filter-tab" data-filter="cake" data-vi="Bánh Kem" data-en="Cakes">Bánh Kem</button>
+        <button class="filter-tab" data-filter="pastry" data-vi="Bánh Âu" data-en="Pastry">Bánh Âu</button>
+        <button class="filter-tab" data-filter="drink" data-vi="Đồ Uống" data-en="Drinks">Đồ Uống</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-category="cake">
+          <div class="product-img-wrap">
+            <img src="images/cake_strawberry.png" alt="Bánh kem dâu tây Hokkaido" loading="lazy" />
+            <div class="product-badge" data-vi="Bán Chạy" data-en="Best Seller">Bán Chạy</div>
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Bánh Kem Dâu Tây Hokkaido')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Kem" data-en="Cake">Bánh Kem</div>
+            <h3 class="product-name" data-vi="Bánh Kem Dâu Tây Hokkaido" data-en="Hokkaido Strawberry Cream Cake">Bánh Kem Dâu Tây Hokkaido</h3>
+            <p class="product-desc" data-vi="Lớp cốt chiffon mềm mại, kem tươi Hokkaido hảo hạng và dâu tây mọng nước" data-en="Soft chiffon layers, premium Hokkaido fresh cream and juicy fresh strawberries">Lớp cốt chiffon mềm mại, kem tươi Hokkaido hảo hạng và dâu tây mọng nước</p>
+            <div class="product-footer">
+              <span class="product-price">250.000đ – 450.000đ</span>
+              <span class="product-size">6" – 8"</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="cake">
+          <div class="product-img-wrap">
+            <img src="images/cake_tiramisu.png" alt="Tiramisu cốt rượu" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Tiramisu Cốt Rượu')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Kem" data-en="Cake">Bánh Kem</div>
+            <h3 class="product-name" data-vi="Tiramisu Cốt Rượu" data-en="Classic Tiramisu">Tiramisu Cốt Rượu</h3>
+            <p class="product-desc" data-vi="Đậm vị cà phê, rượu rum nhẹ và kem mascarpone béo ngậy đúng điệu Ý" data-en="Rich coffee, light rum and indulgent mascarpone cream in Italian style">Đậm vị cà phê, rượu rum nhẹ và kem mascarpone béo ngậy đúng điệu Ý</p>
+            <div class="product-footer">
+              <span class="product-price">180.000đ – 350.000đ</span>
+              <span class="product-size" data-vi="Phần / Hộp" data-en="Slice / Box">Phần / Hộp</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="cake">
+          <div class="product-img-wrap">
+            <img src="images/cake_matcha.png" alt="Mousse trà xanh" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Mousse Trà Xanh')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Lạnh" data-en="Cold Cake">Bánh Lạnh</div>
+            <h3 class="product-name" data-vi="Mousse Trà Xanh Uji" data-en="Uji Matcha Mousse">Mousse Trà Xanh Uji</h3>
+            <p class="product-desc" data-vi="Vị matcha Nhật Bản đậm đà, lớp mousse mịn mượt tan ngay trong miệng" data-en="Authentic Japanese matcha, silky smooth mousse that melts in your mouth">Vị matcha Nhật Bản đậm đà, lớp mousse mịn mượt tan ngay trong miệng</p>
+            <div class="product-footer">
+              <span class="product-price">200.000đ – 380.000đ</span>
+              <span class="product-size">6" – 8"</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="pastry">
+          <div class="product-img-wrap">
+            <img src="images/cake_croissant.png" alt="Croissant bơ Pháp" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Croissant Bơ Pháp')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Âu" data-en="Pastry">Bánh Âu</div>
+            <h3 class="product-name" data-vi="Croissant Bơ Pháp" data-en="French Butter Croissant">Croissant Bơ Pháp</h3>
+            <p class="product-desc" data-vi="Vỏ giòn rụm, lớp bơ Pháp thơm nồng, nhiều tầng mỏng như cánh hoa" data-en="Crispy shell, fragrant French butter, with delicate flaky layers like petals">Vỏ giòn rụm, lớp bơ Pháp thơm nồng, nhiều tầng mỏng như cánh hoa</p>
+            <div class="product-footer">
+              <span class="product-price">55.000đ – 75.000đ</span>
+              <span class="product-size" data-vi="1 chiếc" data-en="Per piece">1 chiếc</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="pastry">
+          <div class="product-img-wrap">
+            <img src="images/cake_macaron.png" alt="Macaron ngũ sắc" loading="lazy" />
+            <div class="product-badge new" data-vi="Mới" data-en="New">Mới</div>
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Macaron Ngũ Sắc')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Âu" data-en="Pastry">Bánh Âu</div>
+            <h3 class="product-name" data-vi="Macaron Ngũ Sắc" data-en="Rainbow Macarons">Macaron Ngũ Sắc</h3>
+            <p class="product-desc" data-vi="Bộ 6 macaron Pháp đủ màu sắc: dâu, chanh, socola, vani, hồng trà..." data-en="Set of 6 French macarons in colors: strawberry, lemon, chocolate, vanilla, rose tea...">Bộ 6 macaron Pháp đủ màu sắc: dâu, chanh, socola, vani, hồng trà...</p>
+            <div class="product-footer">
+              <span class="product-price">150.000đ / set 6</span>
+              <span class="product-size" data-vi="Hộp 6 cái" data-en="Box of 6">Hộp 6 cái</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="cake">
+          <div class="product-img-wrap">
+            <img src="images/cake_red_velvet.png" alt="Red Velvet" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Red Velvet')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Kem" data-en="Cake">Bánh Kem</div>
+            <h3 class="product-name" data-vi="Red Velvet – Nhung Đỏ" data-en="Red Velvet Cake">Red Velvet – Nhung Đỏ</h3>
+            <p class="product-desc" data-vi="Cốt bánh đỏ mềm mịn như nhung, kem phô mai chua dịu, ngọt nhẹ và quyến rũ" data-en="Velvety red sponge with cream cheese frosting, lightly sweet and irresistible">Cốt bánh đỏ mềm mịn như nhung, kem phô mai chua dịu, ngọt nhẹ và quyến rũ</p>
+            <div class="product-footer">
+              <span class="product-price">220.000đ – 420.000đ</span>
+              <span class="product-size">6" – 8"</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="pastry">
+          <div class="product-img-wrap">
+            <img src="images/cake_tart.png" alt="Bánh tart trái cây" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Bánh Tart Trái Cây')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Bánh Âu" data-en="Pastry">Bánh Âu</div>
+            <h3 class="product-name" data-vi="Bánh Tart Trái Cây" data-en="Fresh Fruit Tart">Bánh Tart Trái Cây</h3>
+            <p class="product-desc" data-vi="Vỏ tart giòn tan, kem custard mịn mượt, phủ đầy trái cây tươi theo mùa" data-en="Crispy tart shell, silky smooth custard cream, topped with seasonal fresh fruits">Vỏ tart giòn tan, kem custard mịn mượt, phủ đầy trái cây tươi theo mùa</p>
+            <div class="product-footer">
+              <span class="product-price">85.000đ – 120.000đ</span>
+              <span class="product-size" data-vi="1 chiếc" data-en="Per piece">1 chiếc</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="drink">
+          <div class="product-img-wrap">
+            <img src="images/drink_earl_grey.png" alt="Trà Earl Grey mâm xôi" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Trà Earl Grey Mâm Xôi')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Đồ Uống" data-en="Drink">Đồ Uống</div>
+            <h3 class="product-name" data-vi="Trà Earl Grey Mâm Xôi" data-en="Earl Grey Raspberry Tea">Trà Earl Grey Mâm Xôi</h3>
+            <p class="product-desc" data-vi="Hương bergamot tinh tế kết hợp mâm xôi chua ngọt và cánh hoa hồng khô" data-en="Delicate bergamot with tangy raspberries and fragrant dried rose petals">Hương bergamot tinh tế kết hợp mâm xôi chua ngọt và cánh hoa hồng khô</p>
+            <div class="product-footer">
+              <span class="product-price">65.000đ</span>
+              <span class="product-size" data-vi="Hot / Iced" data-en="Hot / Iced">Hot / Iced</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="drink">
+          <div class="product-img-wrap">
+            <img src="images/drink_cold_brew.png" alt="Cold Brew" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Cold Brew')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Đồ Uống" data-en="Drink">Đồ Uống</div>
+            <h3 class="product-name" data-vi="Cold Brew Signature" data-en="Signature Cold Brew">Cold Brew Signature</h3>
+            <p class="product-desc" data-vi="Cà phê ủ lạnh 12 giờ, vị đậm đà mượt mà, hoà quyện lớp kem tươi béo ngậy" data-en="Cold-steeped 12 hours, rich and smooth, blended with a layer of fresh cream">Cà phê ủ lạnh 12 giờ, vị đậm đà mượt mà, hoà quyện lớp kem tươi béo ngậy</p>
+            <div class="product-footer">
+              <span class="product-price">75.000đ</span>
+              <span class="product-size" data-vi="Iced Only" data-en="Iced Only">Iced Only</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="drink">
+          <div class="product-img-wrap">
+            <img src="images/drink_chamomile.png" alt="Trà hoa cúc mật ong" loading="lazy" />
+            <div class="product-overlay">
+              <button class="btn-add" onclick="addToOrder('Trà Hoa Cúc Mật Ong')" data-vi="Đặt Ngay" data-en="Order">Đặt Ngay</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-cat" data-vi="Đồ Uống" data-en="Drink">Đồ Uống</div>
+            <h3 class="product-name" data-vi="Trà Hoa Cúc Mật Ong" data-en="Chamomile Honey Tea">Trà Hoa Cúc Mật Ong</h3>
+            <p class="product-desc" data-vi="Hương hoa cúc dịu dàng, mật ong nguyên chất, giúp thư giãn tinh thần" data-en="Gentle chamomile fragrance with pure honey, a wonderful relaxing experience">Hương hoa cúc dịu dàng, mật ong nguyên chất, giúp thư giãn tinh thần</p>
+            <div class="product-footer">
+              <span class="product-price">60.000đ</span>
+              <span class="product-size" data-vi="Hot / Warm" data-en="Hot / Warm">Hot / Warm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OCCASIONS SECTION ===== -->
+  <section class="occasions" id="occasions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-vi="Theo Dịp" data-en="By Occasion">Theo Dịp</span>
+        <h2 class="section-title" data-vi="Bánh Cho Mọi Khoảnh Khắc" data-en="Cake for Every Moment">Bánh Cho Mọi Khoảnh Khắc</h2>
+        <p class="section-subtitle" data-vi="Thiết kế theo độ tuổi, sở thích và thông điệp yêu thương của bạn" data-en="Designed to match your age, preferences and loving message">Thiết kế theo độ tuổi, sở thích và thông điệp yêu thương của bạn</p>
+      </div>
+      <div class="occasions-grid">
+        <div class="occasion-card">
+          <div class="occasion-icon">🎂</div>
+          <h3 data-vi="Sinh Nhật" data-en="Birthday">Sinh Nhật</h3>
+          <p data-vi="Chiếc bánh sinh nhật ý nghĩa, ghi tên và lời chúc theo yêu cầu" data-en="Meaningful birthday cake with custom name and message">Chiếc bánh sinh nhật ý nghĩa, ghi tên và lời chúc theo yêu cầu</p>
+        </div>
+        <div class="occasion-card">
+          <div class="occasion-icon">💍</div>
+          <h3 data-vi="Kỷ Niệm" data-en="Anniversary">Kỷ Niệm</h3>
+          <p data-vi="Tone hồng đỏ ngọt ngào, thiết kế lãng mạn cho ngày đặc biệt" data-en="Sweet pink and red tones, romantic design for your special day">Tone hồng đỏ ngọt ngào, thiết kế lãng mạn cho ngày đặc biệt</p>
+        </div>
+        <div class="occasion-card">
+          <div class="occasion-icon">🎊</div>
+          <h3 data-vi="Tiệc &amp; Sự Kiện" data-en="Party &amp; Events">Tiệc &amp; Sự Kiện</h3>
+          <p data-vi="Nhận số lượng lớn cho tiệc, khai trương, lễ kỷ niệm công ty" data-en="Bulk orders for parties, grand openings, corporate anniversaries">Nhận số lượng lớn cho tiệc, khai trương, lễ kỷ niệm công ty</p>
+        </div>
+        <div class="occasion-card">
+          <div class="occasion-icon">🎁</div>
+          <h3 data-vi="Quà Tặng" data-en="Gift Set">Quà Tặng</h3>
+          <p data-vi="Hộp bánh xinh xắn đóng gói đặc biệt thay lời cảm ơn chân thành" data-en="Beautiful gift boxes specially packaged to express heartfelt gratitude">Hộp bánh xinh xắn đóng gói đặc biệt thay lời cảm ơn chân thành</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY SECTION ===== -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-img-wrap">
+          <img src="images/about_bakery.png" alt="Cream Home story" loading="lazy" />
+          <div class="story-img-badge">
+            <span>🍰</span>
+            <span data-vi="Làm bằng tình yêu" data-en="Made with love">Làm bằng tình yêu</span>
+          </div>
+        </div>
+        <div class="story-content">
+          <span class="section-tag" data-vi="Câu Chuyện" data-en="Our Story">Câu Chuyện</span>
+          <h2 class="section-title left" data-vi="Từ Căn Bếp Nhỏ, Chúng Mình Gửi Đến Bạn" data-en="From Our Little Kitchen, With Love">Từ Căn Bếp Nhỏ, Chúng Mình Gửi Đến Bạn</h2>
+          <p data-vi="Cream Home được tạo nên từ tình yêu dành cho những chiếc bánh xinh xắn và mong muốn mang đến niềm vui qua những điều thật giản dị." data-en="Cream Home was born from a love of beautiful cakes and a desire to bring joy through the simplest of things.">Cream Home được tạo nên từ tình yêu dành cho những chiếc bánh xinh xắn và mong muốn mang đến niềm vui qua những điều thật giản dị.</p>
+          <p data-vi="Chúng mình tin rằng một chiếc bánh ngon không chỉ cần hương vị hấp dẫn mà còn phải chứa đựng cảm xúc và sự chân thành của người làm bánh." data-en="We believe a great cake is not just about flavor – it carries the emotions and sincerity of the baker who made it.">Chúng mình tin rằng một chiếc bánh ngon không chỉ cần hương vị hấp dẫn mà còn phải chứa đựng cảm xúc và sự chân thành của người làm bánh.</p>
+          <div class="story-commitments">
+            <div class="commitment-item"><span class="commitment-icon">✓</span><span data-vi="Nguyên liệu cao cấp, rõ nguồn gốc" data-en="Premium ingredients with clear origins">Nguyên liệu cao cấp, rõ nguồn gốc</span></div>
+            <div class="commitment-item"><span class="commitment-icon">✓</span><span data-vi="Làm theo đơn mỗi ngày – đảm bảo độ tươi" data-en="Made fresh daily – guaranteed freshness">Làm theo đơn mỗi ngày – đảm bảo độ tươi</span></div>
+            <div class="commitment-item"><span class="commitment-icon">✓</span><span data-vi="Thiết kế và màu sắc theo yêu cầu" data-en="Custom design and colors to your preference">Thiết kế và màu sắc theo yêu cầu</span></div>
+            <div class="commitment-item"><span class="commitment-icon">✓</span><span data-vi="Bao bì xinh xắn, phù hợp làm quà tặng" data-en="Beautiful packaging, perfect as a gift">Bao bì xinh xắn, phù hợp làm quà tặng</span></div>
+          </div>
+          <a href="#order" class="btn btn-primary" data-vi="Đặt Bánh Ngay" data-en="Order Now">Đặt Bánh Ngay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS SECTION ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-vi="Đánh Giá" data-en="Reviews">Đánh Giá</span>
+        <h2 class="section-title" data-vi="Yêu Thương Từ Khách Hàng" data-en="Love From Our Customers">Yêu Thương Từ Khách Hàng</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-vi='"Bánh rất xinh, màu sắc nhẹ nhàng đúng như mẫu. Cốt mềm, kem không quá ngọt nên cả nhà đều thích."' data-en='"The cake was beautiful, colors exactly as requested. Soft sponge, not too sweet – the whole family loved it."'>"Bánh rất xinh, màu sắc nhẹ nhàng đúng như mẫu. Cốt mềm, kem không quá ngọt nên cả nhà đều thích."</p>
+          <div class="review-author">
+            <div class="review-avatar">L</div>
+            <div><div class="review-name">Linh Nguyễn</div><div class="review-date" data-vi="Khách hàng thân thiết" data-en="Loyal Customer">Khách hàng thân thiết</div></div>
+          </div>
+        </div>
+        <div class="review-card featured">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-vi='"Đặt bánh khá gấp nhưng Cream Home hỗ trợ nhiệt tình. Bánh đẹp hơn mong đợi và đóng gói rất cẩn thận."' data-en='"Ordered last minute but Cream Home was incredibly supportive. The cake exceeded expectations and was so carefully packaged."'>"Đặt bánh khá gấp nhưng Cream Home hỗ trợ nhiệt tình. Bánh đẹp hơn mong đợi và đóng gói rất cẩn thận."</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div><div class="review-name">Mai Trần</div><div class="review-date" data-vi="Khách hàng thân thiết" data-en="Loyal Customer">Khách hàng thân thiết</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-vi='"Bánh ngon, tư vấn nhanh và thân thiện. Tone màu bánh rất xinh, chụp ảnh lên cực kỳ đáng yêu."' data-en='"Delicious cake, fast and friendly. The color palette is gorgeous – so photogenic and adorable."'>"Bánh ngon, tư vấn nhanh và thân thiện. Tone màu bánh rất xinh, chụp ảnh lên cực kỳ đáng yêu."</p>
+          <div class="review-author">
+            <div class="review-avatar">H</div>
+            <div><div class="review-name">Hà Phạm</div><div class="review-date" data-vi="Khách hàng thân thiết" data-en="Loyal Customer">Khách hàng thân thiết</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-vi='"Mình rất thích cách Cream Home chăm chút từng chi tiết nhỏ. Từ bánh đến hộp đựng đều khiến người nhận cảm thấy được yêu thương."' data-en='"I love how Cream Home cares for every little detail. From the cake to the box, everything makes the recipient feel loved."'>"Mình rất thích cách Cream Home chăm chút từng chi tiết nhỏ. Từ bánh đến hộp đựng đều khiến người nhận cảm thấy được yêu thương."</p>
+          <div class="review-author">
+            <div class="review-avatar">T</div>
+            <div><div class="review-name">Thu Hương</div><div class="review-date" data-vi="Khách hàng thân thiết" data-en="Loyal Customer">Khách hàng thân thiết</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO ORDER ===== -->
+  <section class="how-order" id="guide">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-vi="Hướng Dẫn" data-en="How To Order">Hướng Dẫn</span>
+        <h2 class="section-title" data-vi="Đặt Bánh Dễ Dàng Trong 5 Bước" data-en="Order in 5 Easy Steps">Đặt Bánh Dễ Dàng Trong 5 Bước</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">01</div>
+          <div class="step-icon">🎨</div>
+          <h3 data-vi="Chọn Mẫu Bánh" data-en="Choose Design">Chọn Mẫu Bánh</h3>
+          <p data-vi="Lựa chọn hương vị, kích thước và kiểu dáng trang trí" data-en="Select flavor, size and decoration style">Lựa chọn hương vị, kích thước và kiểu dáng trang trí</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">02</div>
+          <div class="step-icon">📝</div>
+          <h3 data-vi="Điền Thông Tin" data-en="Fill Details">Điền Thông Tin</h3>
+          <p data-vi="Họ tên, số điện thoại, ngày nhận và lời nhắn trên bánh" data-en="Name, phone number, pickup date and message">Họ tên, số điện thoại, ngày nhận và lời nhắn trên bánh</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">03</div>
+          <div class="step-icon">✅</div>
+          <h3 data-vi="Xác Nhận Đơn" data-en="Confirmation">Xác Nhận Đơn</h3>
+          <p data-vi="Cream Home liên hệ xác nhận mẫu bánh, giá và thời gian giao" data-en="Cream Home contacts to confirm design, price and delivery time">Cream Home liên hệ xác nhận mẫu bánh, giá và thời gian giao</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">04</div>
+          <div class="step-icon">🎂</div>
+          <h3 data-vi="Làm Bánh" data-en="Baking">Làm Bánh</h3>
+          <p data-vi="Mỗi chiếc bánh được làm tươi theo đơn, đảm bảo chất lượng" data-en="Each cake is made fresh to order, quality guaranteed">Mỗi chiếc bánh được làm tươi theo đơn, đảm bảo chất lượng</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">05</div>
+          <div class="step-icon">🚚</div>
+          <h3 data-vi="Nhận Bánh" data-en="Receive Cake">Nhận Bánh</h3>
+          <p data-vi="Bánh được giao đến bạn đúng hẹn trong hộp xinh xắn" data-en="Cake delivered on time in a beautiful box">Bánh được giao đến bạn đúng hẹn trong hộp xinh xắn</p>
+        </div>
+      </div>
+      <div class="how-order-note">
+        <span class="note-icon">⏰</span>
+        <span data-vi="Vui lòng đặt trước 1–3 ngày để chúng mình chuẩn bị sản phẩm chỉn chu nhất" data-en="Please order 1–3 days in advance for the most carefully prepared product">Vui lòng đặt trước 1–3 ngày để chúng mình chuẩn bị sản phẩm chỉn chu nhất</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRE-ORDER FORM ===== -->
+  <section class="order" id="order">
+    <div class="container">
+      <div class="order-grid">
+        <div class="order-info">
+          <span class="section-tag" data-vi="Đặt Bánh" data-en="Pre-Order">Đặt Bánh</span>
+          <h2 class="section-title left" data-vi="Đặt Bánh Của Bạn" data-en="Place Your Order">Đặt Bánh Của Bạn</h2>
+          <p data-vi="Gửi thông tin đặt bánh và Cream Home sẽ liên hệ xác nhận sớm nhất." data-en="Send your order details and Cream Home will contact you for confirmation ASAP.">Gửi thông tin đặt bánh và Cream Home sẽ liên hệ xác nhận sớm nhất.</p>
+          <div class="order-contact-items">
+            <div class="order-contact-item">
+              <span class="contact-icon">📍</span>
+              <div><strong data-vi="Địa Chỉ" data-en="Address">Địa Chỉ</strong><span>123 Nguyễn Đình Chiểu, Quận 3, TP.HCM</span></div>
+            </div>
+            <div class="order-contact-item">
+              <span class="contact-icon">📞</span>
+              <div><strong data-vi="Điện Thoại" data-en="Phone">Điện Thoại</strong><span><a href="tel:0901234567">090 123 4567</a></span></div>
+            </div>
+            <div class="order-contact-item">
+              <span class="contact-icon">🕐</span>
+              <div><strong data-vi="Giờ Mở Cửa" data-en="Opening Hours">Giờ Mở Cửa</strong><span data-vi="T2–T7: 8:00–20:00 | CN: 9:00–18:00" data-en="Mon–Sat: 8:00–20:00 | Sun: 9:00–18:00">T2–T7: 8:00–20:00 | CN: 9:00–18:00</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="order-form-wrap">
+          <form class="order-form" id="orderForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-vi="Họ và Tên *" data-en="Full Name *">Họ và Tên *</label>
+                <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A" />
+              </div>
+              <div class="form-group">
+                <label for="phone" data-vi="Số Điện Thoại *" data-en="Phone Number *">Số Điện Thoại *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="090 xxx xxxx" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pickup-date" data-vi="Ngày Nhận Bánh *" data-en="Pickup Date *">Ngày Nhận Bánh *</label>
+                <input type="date" id="pickup-date" name="pickup-date" required />
+              </div>
+              <div class="form-group">
+                <label for="pickup-time" data-vi="Giờ Nhận Bánh" data-en="Pickup Time">Giờ Nhận Bánh</label>
+                <input type="time" id="pickup-time" name="pickup-time" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cake-type" data-vi="Loại Bánh *" data-en="Cake Type *">Loại Bánh *</label>
+              <select id="cake-type" name="cake-type" required>
+                <option value="" data-vi="-- Chọn loại bánh --" data-en="-- Select cake type --">-- Chọn loại bánh --</option>
+                <option value="strawberry" data-vi="Bánh Kem Dâu Tây Hokkaido" data-en="Hokkaido Strawberry Cream Cake">Bánh Kem Dâu Tây Hokkaido</option>
+                <option value="tiramisu" data-vi="Tiramisu Cốt Rượu" data-en="Classic Tiramisu">Tiramisu Cốt Rượu</option>
+                <option value="matcha" data-vi="Mousse Trà Xanh Uji" data-en="Uji Matcha Mousse">Mousse Trà Xanh Uji</option>
+                <option value="croissant" data-vi="Croissant Bơ Pháp" data-en="French Butter Croissant">Croissant Bơ Pháp</option>
+                <option value="macaron" data-vi="Macaron Ngũ Sắc" data-en="Rainbow Macarons">Macaron Ngũ Sắc</option>
+                <option value="redvelvet" data-vi="Red Velvet – Nhung Đỏ" data-en="Red Velvet Cake">Red Velvet – Nhung Đỏ</option>
+                <option value="tart" data-vi="Bánh Tart Trái Cây" data-en="Fresh Fruit Tart">Bánh Tart Trái Cây</option>
+                <option value="custom" data-vi="Thiết Kế Theo Yêu Cầu" data-en="Custom Design">Thiết Kế Theo Yêu Cầu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-vi="Lời Ghi Trên Bánh / Ghi Chú" data-en="Message on Cake / Notes">Lời Ghi Trên Bánh / Ghi Chú</label>
+              <textarea id="message" name="message" rows="3" placeholder="Ví dụ: Happy Birthday Lan ❤️ hoặc yêu cầu đặc biệt..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text" data-vi="Gửi Đơn Đặt Bánh 🎂" data-en="Submit Order 🎂">Gửi Đơn Đặt Bánh 🎂</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">🎉</div>
+    <div class="toast-content">
+      <strong id="toastTitle">Đơn đặt bánh đã gửi!</strong>
+      <span id="toastMsg">Cream Home sẽ sớm liên hệ xác nhận với bạn.</span>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo footer-logo">
+              <span class="logo-icon">🎂</span>
+              <span class="logo-text">Cream<em>Home</em></span>
+            </a>
+            <p data-vi="Tiệm bánh ngọt thủ công cao cấp – nơi mỗi chiếc bánh là một tác phẩm nghệ thuật được làm từ tình yêu." data-en="Premium handcrafted bakery – where every cake is a work of art made with love and care.">Tiệm bánh ngọt thủ công cao cấp – nơi mỗi chiếc bánh là một tác phẩm nghệ thuật được làm từ tình yêu.</p>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.36 6.36 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.68a4.85 4.85 0 01-1.01.01z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <h4 data-vi="Khám Phá" data-en="Explore">Khám Phá</h4>
+            <ul>
+              <li><a href="#home" data-vi="Trang Chủ" data-en="Home">Trang Chủ</a></li>
+              <li><a href="#products" data-vi="Thực Đơn" data-en="Menu">Thực Đơn</a></li>
+              <li><a href="#occasions" data-vi="Bánh Theo Dịp" data-en="By Occasion">Bánh Theo Dịp</a></li>
+              <li><a href="#story" data-vi="Câu Chuyện" data-en="Our Story">Câu Chuyện</a></li>
+              <li><a href="#reviews" data-vi="Đánh Giá" data-en="Reviews">Đánh Giá</a></li>
+              <li><a href="#order" data-vi="Đặt Bánh" data-en="Order">Đặt Bánh</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4 data-vi="Liên Hệ" data-en="Contact">Liên Hệ</h4>
+            <div class="footer-contact-item"><span>📍</span><span>123 Nguyễn Đình Chiểu, Quận 3, TP.HCM</span></div>
+            <div class="footer-contact-item"><span>📞</span><a href="tel:0901234567">090 123 4567</a></div>
+            <div class="footer-contact-item"><span>📧</span><a href="mailto:hello@creamhome.vn">hello@creamhome.vn</a></div>
+            <div class="footer-contact-item"><span>🕐</span><span data-vi="T2–T7: 8:00–20:00 | CN: 9:00–18:00" data-en="Mon–Sat: 8:00–20:00 | Sun: 9:00–18:00">T2–T7: 8:00–20:00 | CN: 9:00–18:00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-vi="© 2024 Cream Home. Làm với ❤️ từ TP.HCM, Việt Nam." data-en="© 2024 Cream Home. Made with ❤️ from Ho Chi Minh City, Vietnam.">© 2024 Cream Home. Làm với ❤️ từ TP.HCM, Việt Nam.</p>
+        <p data-vi="Một chút ngọt ngào cho ngày thêm vui 🍰" data-en="A little sweetness to brighten your day 🍰">Một chút ngọt ngào cho ngày thêm vui 🍰</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

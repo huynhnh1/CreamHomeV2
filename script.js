@@ -10,7 +10,7 @@
    ============================================ */
 
 // ===== ⚙️  CẤU HÌNH – CHỈ CẦN SỬA DÒNG NÀY =====
-const GOOGLE_SCRIPT_URL = 'PASTE_YOUR_APPS_SCRIPT_URL_HERE';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxYD8LBefysYPNxXClj5FnK8FbdEH7-US90I04PDn2vcpliN0aaFuzGnN6XJiloS3c/exec';
 // Ví dụ: 'https://script.google.com/macros/s/AKfycb.../exec'
 // ===================================================
 
